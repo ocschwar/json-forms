@@ -60,7 +60,7 @@
                     null,
                     null,
                     "[String validation](http://json-schema.org/latest/json-schema-validation.html#anchor25) supporting `minLength`, `maxLength`, and `pattern`"],
-                ["Definitions",
+                ["ReadOnly",
             {"$schema": "http://json-schema.org/draft-03/schema#", "type": "object",
 
 	    "properties": {"s1": {"type":"string"},"s2":{"type":"string","readOnly":true},
@@ -69,8 +69,8 @@
 	    ,
             {"s1":"foo","s2":"bar","a1":["foo","bar"],"a2":["baz","corge"]},
             null,
-            "[Definitions](http://json-schema.org/latest/json-schema-validation.html) Supporting internal references to definitions."],
-                ["ReadOnly",
+            "[Read Only](http://json-schema.org/latest/json-schema-validation.html) Supporting greyed-out display of read-only elements"],
+                ["Definitions",
             {"$schema": "http://json-schema.org/draft-03/schema#", "type": "object",
 	    "definitions":{"d1":{"type":"string","description":"A type definition that can be referred to all around the schema."}},
 
